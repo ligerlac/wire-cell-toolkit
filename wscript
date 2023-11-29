@@ -65,6 +65,9 @@ int main(int argc,const char *argv[])
     cfg.env.CXXFLAGS += ['-Wall', '-Wno-unused-local-typedefs', '-Wno-unused-function']
     # cfg.env.CXXFLAGS += ['-Wpedantic', '-Werror']
     cfg.env.CXXFLAGS += ['-std=c++17']
+
+    # this fixes 'Boost.Stacktrace requires `_Unwind_Backtrace` function.'
+    cfg.env.CXXFLAGS += ['-DBOOST_STACKTRACE_GNU_SOURCE_NOT_REQUIRED=1']
     
     if cfg.options.with_spdlog_static.lower() in ("yes","on","true"):
         cfg.env.CXXFLAGS += ['-DSPDLOG_COMPILED_LIB=1']
