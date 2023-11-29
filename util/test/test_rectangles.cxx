@@ -26,6 +26,7 @@ Thank you herbstluftwm(1) for the drawing.
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 
 using key_t = int;                  // coordinates
 typedef boost::icl::interval<key_t>::interval_type interval_t;

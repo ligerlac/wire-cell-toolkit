@@ -176,6 +176,12 @@ namespace WireCell {
         cfg = val;
     }
 
+    // template <>
+    // void assign(Configuration& cfg, const unsigned long& val)
+    // {
+    //     cfg = (unsigned int)val;
+    // }
+
     template <typename T>
     void assign(Configuration& cfg, const std::vector<T>& val)
     {

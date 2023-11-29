@@ -5,6 +5,7 @@
 #include "WireCellUtil/svg.hpp"
 
 #include <iostream>
+#include <vector>
 
 using namespace WireCell;
 using namespace WireCell::String;

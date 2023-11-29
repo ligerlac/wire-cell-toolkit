@@ -1,5 +1,6 @@
 #include <Eigen/Core>
 #include <iostream>
+#include <vector>
 
 using DEFM = Eigen::Array<float, Eigen::Dynamic, Eigen::Dynamic>; // should be ColMajor
 using COLM = Eigen::Array<float, Eigen::Dynamic, Eigen::Dynamic, Eigen::ColMajor>;
